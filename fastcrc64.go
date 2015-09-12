@@ -20,7 +20,7 @@ func New() hash.Hash64 {
 func init() {
 	var crc uint64
 
-	h := crc64.New(crc64.MakeTable(crc64.ECMA))
+	h := crc64.New(crc64.MakeTable(crc64.ISO))
 
 	for n := 0; n < 256; n++ {
 		h.Reset()
